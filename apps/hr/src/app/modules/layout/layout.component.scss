@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+
+  &__left {
+    flex: 0 0 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  &__right {
+    flex: 1 1 auto;
+    padding: 20px;
+  }
+
+  .user {
+    &__avatar {
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    &__name {
+      text-align: center;
+
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+
+  .nav {
+    padding: 25px 0;
+
+    &__item {
+      padding: 10px 0;
+    }
+  }
+}

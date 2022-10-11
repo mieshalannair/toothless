@@ -16,8 +16,17 @@ This project was generated using [Nx](https://nx.dev).
 
 ## How to run app locally
 
+### Using docker-compose
+
 - Make sure you have installed docker on your machine
 - Run `docker-compose up`
+- Angular app will be running on http://localhost:4200/ and api will be running on http://localhost:3333/api
+
+### Using node
+
+- run` nvm use` is you have [nvm](https://github.com/nvm-sh/nvm) on your machine or use node version `17`
+- run `npm start` to start the frontend app
+- run `npm run start api` to start the backend app
 - Angular app will be running on http://localhost:4200/ and api will be running on http://localhost:3333/api
 
 ---
@@ -30,6 +39,7 @@ USER STORY 1: Upload Users ✅
 - If more than one file or file is empty, api will throw an error.
 - Using transaction thus all success or all failed, there will be no partial user created
 - User document are being validated.
+  > :warning: note: when uploading csv file in form data the key should be `file`
 
 USER STORY 2: Employee Dashboard Feature ✅
 

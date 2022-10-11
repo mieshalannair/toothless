@@ -113,6 +113,8 @@ export class AppService {
     let session: ClientSession;
     const json = await csvToJson().fromFile(path);
 
+    console.log(json);
+
     if (!json.length) {
       throw new HttpException(
         'Uploaded file has should have at least one row',

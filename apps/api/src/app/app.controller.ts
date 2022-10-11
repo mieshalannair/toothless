@@ -72,13 +72,4 @@ export class AppController {
       return { message: 'User is deleted' };
     });
   }
-
-  @Post('users/upload')
-  @HttpCode(200)
-  @FormDataRequest()
-  uploadUsers(@Body() body: FormDataTestDto): Promise<Message> {
-    return this.appService.uploadUser(body.file.path).then((count) => {
-      return { message: `${count} users created!` };
-    });
-  }
 }
